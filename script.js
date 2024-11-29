@@ -54,3 +54,7 @@ student.totalCourses = function() {
 student.addCourse("Javascript");
 console.log("Updated Courses:", student.courses);
 console.log("Total Number of Courses:", student.totalCourses());
+
+// Bonus Task
+const averageScore = scores.reduce((sum, score) => sum + score, 0) / scores.length;
+console.log("Average Score:", averageScore);
