@@ -37,3 +37,7 @@ console.log("Second Score:", score2);
 // Part 4: The Spread Operator
 const clonedStudent = { ...student, graduationYear: 2025 };
 console.log("Cloned Student with New Property:", clonedStudent);
+
+const newCourses = ["Writ", "Operating Systems"];
+const allCourses = [...student.courses, ...newCourses];
+console.log("Merged Courses:", allCourses);
