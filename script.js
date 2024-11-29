@@ -22,3 +22,9 @@ const newStudent = JSON.parse(studentJSON);
 console.log("Newly Created Object:", newStudent);
 
 console.log("Are the objects equal?", JSON.stringify(student) === JSON.stringify(newStudent));
+
+
+// Part 3: Using Destructuring Assignment
+const { name, courses } = student;
+console.log("Destructured Name:", name);
+console.log("Destructured Courses:", courses);
