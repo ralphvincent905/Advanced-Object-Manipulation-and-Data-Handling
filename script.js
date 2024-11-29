@@ -41,3 +41,16 @@ console.log("Cloned Student with New Property:", clonedStudent);
 const newCourses = ["Writ", "Operating Systems"];
 const allCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", allCourses);
+
+// Part 5: Object Methods
+student.addCourse = function(course) {
+    this.courses.push(course);
+  };
+
+student.totalCourses = function() {
+    return this.courses.length;
+  };
+
+student.addCourse("Javascript");
+console.log("Updated Courses:", student.courses);
+console.log("Total Number of Courses:", student.totalCourses());
